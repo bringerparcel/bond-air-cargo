@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      <div className="container nav-inner">
+      <div className="nav-inner">
         <Link href="/" className="logo">
           <Image src="/images/logo-white.png" alt="Bond Air Cargo" width={180} height={60} priority style={{ height: 'auto' }} />
         </Link>
