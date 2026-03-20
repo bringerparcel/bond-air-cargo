@@ -15,7 +15,7 @@ export default function Header() {
     <header className="site-header">
       <div className="nav-inner">
         <Link href="/" className="logo">
-          <Image src="/images/logo-white.png" alt="Bond Air Cargo" width={180} height={60} priority style={{ height: 'auto' }} />
+          <Image src="/images/logo-color.png" alt="Bond Air Cargo" width={180} height={60} priority style={{ height: 'auto' }} />
         </Link>
         <button
           className="menu-toggle"
