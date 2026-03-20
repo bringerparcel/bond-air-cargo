@@ -300,7 +300,7 @@ ul { list-style: none; }
 }
 
 /* ===== SERVICES ===== */
-.services { padding: 100px 0; }
+.services { padding: 100px 0; background: var(--footer-dark); }
 .services-header { text-align: center; margin-bottom: 64px; }
 .services-header .section-subtitle { margin: 0 auto; }
 .services-grid {
@@ -341,7 +341,7 @@ ul { list-style: none; }
 }
 
 /* ===== FLEET SECTION ===== */
-.fleet { padding: 100px 0; background: var(--footer-dark); }
+.fleet { padding: 100px 0; }
 .fleet-header { text-align: center; margin-bottom: 64px; }
 .fleet-header .section-subtitle { margin: 0 auto; }
 
