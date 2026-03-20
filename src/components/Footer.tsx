@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="logo">
-              <span className="mark">BA</span> BOND AIR CARGO
+              <Image src="/images/logo-white.png" alt="Bond Air Cargo" width={180} height={60} style={{ height: 'auto' }} />
             </div>
             <p>
               Charter freight and cargo solutions. Operated aircraft,

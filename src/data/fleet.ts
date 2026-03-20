@@ -18,6 +18,7 @@ export interface FleetAircraft {
   slug: string;
   name: string;
   type: string;
+  image: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -39,6 +40,7 @@ export const fleetData: FleetAircraft[] = [
     slug: "seneca-ii",
     name: "Piper PA-34-200T Seneca\u00a0II",
     type: "Light Twin",
+    image: "/images/fleet-seneca-ii.jpg",
     title: "Piper PA-34-200T Seneca\u00a0II",
     metaTitle: "Piper PA-34-200T Seneca II | Bond Air Cargo Fleet",
     metaDescription:
@@ -96,6 +98,7 @@ export const fleetData: FleetAircraft[] = [
     slug: "737-400f",
     name: "Boeing 737-400F",
     type: "Narrowbody Freighter",
+    image: "/images/fleet-737-400f.jpg",
     title: "Boeing 737-400F Freighter",
     metaTitle: "Boeing 737-400F Freighter | Bond Air Cargo Fleet",
     metaDescription:
@@ -153,6 +156,7 @@ export const fleetData: FleetAircraft[] = [
     slug: "737-800f",
     name: "Boeing 737-800F",
     type: "Narrowbody Freighter",
+    image: "/images/fleet-737-800f.jpg",
     title: "Boeing 737-800F Freighter",
     metaTitle: "Boeing 737-800F Freighter | Bond Air Cargo Fleet",
     metaDescription:
@@ -211,6 +215,7 @@ export const fleetData: FleetAircraft[] = [
     slug: "a321f",
     name: "Airbus A321F",
     type: "Narrowbody Freighter",
+    image: "/images/fleet-a321f.jpg",
     title: "Airbus A321F Freighter",
     metaTitle: "Airbus A321F Freighter | Bond Air Cargo Fleet",
     metaDescription:

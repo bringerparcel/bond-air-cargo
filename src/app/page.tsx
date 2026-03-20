@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FleetCard from "@/components/FleetCard";
@@ -35,14 +36,6 @@ export default function HomePage() {
             high-value freight, and gateway-to-gateway shipments — from a
             600&nbsp;lb rush package to 62,000&nbsp;lb full freighter loads.
           </p>
-          <div className="hero-actions">
-            <Link href="#contact" className="btn-primary">
-              Get a Quote Now &rarr;
-            </Link>
-            <Link href="#fleet" className="btn-outline">
-              View Our Fleet
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -172,7 +165,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="why-bond-image">
-              <PlaneIcon size={120} strokeWidth={0.5} stroke="rgba(0,0,128,0.12)" />
+              <Image src="/images/why-bond.jpg" alt="Cargo plane in flight" width={600} height={400} style={{ borderRadius: '12px', width: '100%', height: 'auto' }} />
             </div>
           </div>
         </div>

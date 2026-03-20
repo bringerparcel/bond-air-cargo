@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container nav-inner">
         <Link href="/" className="logo">
-          <span className="mark">BA</span> BOND AIR CARGO
+          <Image src="/images/logo-white.png" alt="Bond Air Cargo" width={180} height={60} priority style={{ height: 'auto' }} />
         </Link>
         <button
           className="menu-toggle"
@@ -28,7 +29,7 @@ export default function Header() {
           <Link href="/#fleet" onClick={closeMenu}>Fleet</Link>
           <Link href="/#why-bond" onClick={closeMenu}>Why Bond</Link>
           <Link href="/#contact" onClick={closeMenu}>Contact</Link>
-          <Link href="/#contact" className="nav-cta" onClick={closeMenu}>Request a Quote</Link>
+          <Link href="/#contact" className="nav-cta" onClick={closeMenu}>Quote</Link>
         </nav>
       </div>
     </header>

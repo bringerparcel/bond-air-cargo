@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { PlaneIcon } from "./icons";
+import Image from "next/image";
 import type { FleetAircraft } from "@/data/fleet";
 
 export default function FleetCard({ aircraft }: { aircraft: FleetAircraft }) {
   return (
     <Link href={`/fleet/${aircraft.slug}`} className="fleet-card">
       <div className="fleet-card-img">
-        <div className="placeholder-icon">
-          <PlaneIcon size={64} strokeWidth={1} />
-        </div>
+        <Image
+          src={aircraft.image}
+          alt={aircraft.name}
+          fill
+          sizes="(max-width: 768px) 100vw, 25vw"
+          style={{ objectFit: 'cover' }}
+        />
       </div>
       <div className="fleet-card-body">
         <span className="fleet-card-type">{aircraft.type}</span>

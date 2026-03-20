@@ -16,12 +16,6 @@ export default function CTABanner({ label, heading, text }: CTABannerProps) {
             <a href="mailto:charter@bondaircargo.com" className="btn-primary">
               Email Us &rarr;
             </a>
-            <a href="tel:+18005550199" className="btn-secondary">
-              Call Now
-            </a>
-          </div>
-          <div className="cta-phone">
-            <a href="tel:+18005550199">1-800-555-0199</a>
           </div>
         </div>
       </div>

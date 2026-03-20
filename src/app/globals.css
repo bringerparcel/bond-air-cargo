@@ -93,7 +93,7 @@ ul { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(10, 22, 40, 0.95);
+  background: rgba(10, 22, 40, 0.75);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: background 0.3s;
@@ -131,6 +131,7 @@ ul { list-style: none; }
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--surface-50); }
+.nav-links .nav-cta { color: var(--navy-950); }
 .nav-cta {
   display: inline-flex;
   align-items: center;
@@ -162,7 +163,7 @@ ul { list-style: none; }
 /* ===== HERO (stays dark) ===== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -172,7 +173,7 @@ ul { list-style: none; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/images/hero-bg.jpg') center center / cover no-repeat;
+  background: url('/images/hero-bg.jpg') center 80% / cover no-repeat;
   z-index: 0;
 }
 .hero::before {
@@ -181,14 +182,14 @@ ul { list-style: none; }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(135deg, rgba(10,22,40,0.82) 0%, rgba(21,37,60,0.7) 50%, rgba(31,66,93,0.6) 100%);
+    linear-gradient(135deg, rgba(10,22,40,0.65) 0%, rgba(21,37,60,0.5) 50%, rgba(31,66,93,0.4) 100%);
   pointer-events: none;
 }
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 680px;
-  padding-top: 72px;
+  padding-top: 200px;
 }
 .hero-badge {
   display: inline-block;
@@ -213,7 +214,8 @@ ul { list-style: none; }
 .hero h1 span { color: var(--cyan-400); }
 .hero p {
   font-size: 1.15rem;
-  color: var(--surface-400);
+  color: var(--surface-50);
+  font-weight: 600;
   line-height: 1.7;
   margin-bottom: 40px;
   max-width: 540px;
